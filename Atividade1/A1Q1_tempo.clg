@@ -1,0 +1,21 @@
+algoritmo HorasPraMinutosPraSegundos;
+// Síntese
+//  Objetivo:  Mostrar a conversão de horas > minutos > segundos
+//  Entrada : Um número inteiro de horas
+//  Saída : A quantidade de horas convertida em minutos e segundos
+
+
+principal
+	// Declarações
+	inteiro horas;
+	inteiro minutos;
+	inteiro segundos;
+	
+	// Instruções
+	escreva("Dê o número de horas ");
+	leia(horas);
+	minutos = horas*60;
+	segundos = minutos*60;
+	escreva(horas + "h ou " + minutos + "min ou " + segundos + "seg");
+	
+fimPrincipal
