@@ -1,0 +1,28 @@
+algoritmo menor3numeros;
+//  Entrada: Três números inteiros
+//  Saída: Um número inteiro
+// Processamento: Dar saída no menor dos três números
+
+
+principal
+	// Declarações
+	inteiro numeros[3]; //Array para os numeros
+	inteiro i; //variável para for loop
+	
+	// Instruções
+	para(i de 0 ate 2 passo 1) faca //a cada loop do for vai pegar o valor de um novo número
+		escreva("Insira o número " + (i+1) + ": ");
+		leia(numeros[i]);
+	fimPara
+
+	//Checar qual número é menor e printar o resultado
+	se (numeros[0] < numeros[1]  e numeros[0] < numeros[2]) entao
+		escreval("O menor é o número " + numeros[0]);
+	fimSe
+	se (numeros[1] < numeros[0]  e numeros[1] < numeros[2]) entao
+		escreval("O menor é o número " + numeros[1]);
+	fimSe
+	se (numeros[2] < numeros[1]  e numeros[2] < numeros[0]) entao
+		escreval("O menor é o número " + numeros[2]);
+	fimSe
+fimPrincipal
